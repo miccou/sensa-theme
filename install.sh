@@ -1,6 +1,4 @@
-#!/usr/bin/zsh
-
-rsync -r /workspaces/sensa-theme/sensa.zsh-theme ~/.oh-my-zsh/themes/
-sed -i 's/ZSH_THEME="devcontainers"/ZSH_THEME="sensa"/g' ~/.zshrc
+rsync -r sensa.zsh-theme ~/.oh-my-zsh/themes/
+sed -i '/(ZSH_THEME=".*")/d' ~/.zshrc
+echo 'ZSH_THEME="devcontainers"'>>~/.zshrc
 source ~/.zshrc
-zsh
