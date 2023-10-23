@@ -1,4 +1,4 @@
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "postStartCommand": "chmod +x ./test.sh && chmod +x ./install.sh && ./install.sh"
+    "postStartCommand": "chmod +x ./test.sh"
 }
