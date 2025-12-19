@@ -12,7 +12,7 @@ prompt_virtualenv() {
     fi
 }
 
-PROMPT='$(prompt_virtualenv)%{$FG[120]%}${prompt_username}%{$FG[231]%} %{$FG[183]%}%4~ $(git_prompt_info)%{$FG[231]%} %(!.#.$) %{$reset_color%}'
+PROMPT='$(prompt_virtualenv)%{$FG[120]%}${prompt_username}%{$FG[231]%} %{$FG[183]%}%4~$(git_prompt_info)%{$FG[231]%} %(!.#.$) %{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[210]%}("
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[210]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$FG[231]%}"
